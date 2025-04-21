@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes & Elements</title>
+    <style>
+        
+        button:hover {
+            background-color: rgb(76, 181, 216);
+            color: rgb(255, 255, 255);
+        }
+        
+      
+        ul li:first-child {
+            font-weight: bold;
+        }
+        
+        
+        input:focus {
+            border: 2px solid green;
+            outline: none;
+        }
+        
+        
+        p::before {
+            content: "Note: ";
+            font-weight: bold;
+            color: red;
+        }
+        
+        
+        p::first-letter {
+            font-size: 2em;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h2>DEMO</h2>
+    
+    <button>Hover over me</button>
+    
+    <ul>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ul>
+    
+    <input type="text" placeholder="Focus on me">
+    
+    <p>This is a paragraph demonstrating pseudo-elements.</p>
+</body>
+</html>
